@@ -91,6 +91,19 @@ def validate_skill(skill_path):
         if len(compatibility) > 500:
             return False, f"Compatibility is too long ({len(compatibility)} characters). Maximum is 500 characters."
 
+    # Validate license field if present (optional)
+    license_value = frontmatter.get('license', '')
+    if license_value:
+        if not isinstance(license_value, str):
+            return False, f"License must be a string, got {type(license_value).__name__}"
+        if len(license_value) > 500:
+            return False, f"License is too long ({len(license_value)} characters). Maximum is 500 characters."
+        # If the license references LICENSE.txt, verify the file exists
+        if 'LICENSE.txt' in license_value:
+            license_file = skill_path / 'LICENSE.txt'
+            if not license_file.exists():
+                return False, "License references 'LICENSE.txt' but the file was not found in the skill folder"
+
     return True, "Skill is valid!"
 
 if __name__ == "__main__":
