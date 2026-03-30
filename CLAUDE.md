@@ -20,7 +20,7 @@ This is **Anthropic's official Agent Skills repository** — a collection of reu
 │   └── agent-skills-spec.md    # Links to external specification
 ├── template/
 │   └── SKILL.md                # Minimal starter template for new skills
-├── skills/                     # 18 individual skill folders (see below)
+├── skills/                     # 19 individual skill folders (see below)
 ├── README.md
 └── THIRD_PARTY_NOTICES.md
 ```
@@ -43,6 +43,11 @@ This is **Anthropic's official Agent Skills repository** — a collection of reu
 | `skill-creator` | Iterative skill creation and evaluation framework |
 | `webapp-testing` | Playwright-based web app testing |
 | `web-artifacts-builder` | React + TypeScript + Tailwind + shadcn/ui artifact creation |
+
+### Networking / Privacy
+| Skill | Purpose |
+|-------|---------|
+| `goodbye-dpi-phone` | GoodbyeDPI-style DPI bypass setup for iPhone (iOS) and Android |
 
 ### Creative / Design
 | Skill | Purpose |

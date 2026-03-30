@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 128 128" width="128" height="128">
+  <!-- Background circle -->
+  <circle cx="64" cy="64" r="60" fill="#1a1a2e" stroke="#d97757" stroke-width="3"/>
+
+  <!-- Phone outline -->
+  <rect x="42" y="20" width="44" height="88" rx="8" ry="8" fill="none" stroke="#e0e0e0" stroke-width="2.5"/>
+  <!-- Phone screen -->
+  <rect x="46" y="30" width="36" height="64" rx="2" ry="2" fill="#16213e"/>
+  <!-- Phone home bar -->
+  <line x1="56" y1="101" x2="72" y2="101" stroke="#e0e0e0" stroke-width="2" stroke-linecap="round"/>
+
+  <!-- Shield on screen -->
+  <path d="M64 40 L76 46 L76 58 C76 66 71 72 64 76 C57 72 52 66 52 58 L52 46 Z"
+        fill="none" stroke="#d97757" stroke-width="2.5" stroke-linejoin="round"/>
+
+  <!-- Checkmark inside shield -->
+  <polyline points="57,56 62,62 72,50" fill="none" stroke="#4ecca3" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- Signal waves (bypass effect) -->
+  <path d="M30 50 Q24 64 30 78" fill="none" stroke="#4ecca3" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M22 44 Q14 64 22 84" fill="none" stroke="#4ecca3" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+  <path d="M98 50 Q104 64 98 78" fill="none" stroke="#4ecca3" stroke-width="2" stroke-linecap="round" opacity="0.7"/>
+  <path d="M106 44 Q114 64 106 84" fill="none" stroke="#4ecca3" stroke-width="2" stroke-linecap="round" opacity="0.4"/>
+
+  <!-- "DPI" crossed out text at bottom -->
+  <text x="64" y="118" text-anchor="middle" font-family="Arial, sans-serif" font-size="10" font-weight="bold" fill="#e0e0e0" opacity="0.8">DPI</text>
+  <line x1="50" y1="115" x2="78" y2="115" stroke="#d97757" stroke-width="2" stroke-linecap="round"/>
+</svg>
